@@ -1,0 +1,93 @@
+<mvc:View controllerName="skybfr.ft.project1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:card="sap.f.cards"
+    xmlns:f="sap.f">
+    <Page id="page" title="{i18n>title}">
+        <content>
+        <HBox  alignItems="Center" justifyContent="SpaceBetween">
+        <f:Card class="sapUiSmallMarginTop" width="25rem" height="10rem">
+        <f:header>
+        <card:Header id="cardHeader" title="Mathematical Operation"></card:Header>
+        </f:header>
+        <f:content>
+        <VBox alignContent="Center" alignItems="Center">
+        <HBox>
+        <Input id="input1"  liveChange="onInputChange"/>
+        <Input id="input2"  liveChange="onInputChange"/>
+        </HBox>
+        <HBox>
+        <Button id="add" icon="sap-icon://add" press="onaddPress"/>
+        <Button id="sub" icon="sap-icon://less" press="onsubPress"/>
+        <Button id="mul" icon="sap-icon://decline" press="onmulPress"/>
+        <Button id="div" icon="sap-icon://share-2" press="ondivPress"/>
+        </HBox>
+         </VBox>
+        </f:content>
+       
+        
+        </f:Card>
+        <f:Card class="sapUiSmallMarginTop" width="20rem" height="10rem" id="FibonacciSeries">
+        <f:header>
+        <card:Header id="cardHeader2" title="Fibonacci Series"></card:Header>
+        </f:header>
+        <f:content>
+       <HBox width="100%"  justifyContent="SpaceBetween">
+       <Input id="input3"/>
+         <Button id="Button" icon="sap-icon://print" press="onFibonacciPress"/>
+        </HBox>
+        </f:content>
+       </f:Card>
+
+        
+        <f:Card class="sapUiSmallMarginTop" width="20rem" height="10rem" id="PrimeNumber">
+        <f:header>
+        <card:Header id="cardHeader3" title="Prime Number"></card:Header>
+        </f:header>
+        <f:content>
+       <HBox width="100%">
+       <Input id="input4"/>
+         <Button id="Button2" text="OK" press="onPrimePress"/>
+        </HBox>
+        </f:content>
+       </f:Card>
+       </HBox>
+
+ <HBox   justifyContent="SpaceBetween">
+       <f:Card class="sapUiSmallMarginTop" width="20rem" height="22rem" id="Array">
+       <f:header>
+        <card:Header id="cardHeader4" title="Array"></card:Header>
+        </f:header>
+        <f:content>
+        <HBox width="100%">
+       <VBox width="100%">
+       <Input id="input5" type="Number" />
+       <Input id="input6" type="Number"/>
+       <Input id="input7" type="Number"/>
+       <Input id="input8" type="Number"/>
+       <Input id="input9" type="Number"/>
+       <Input id="input10" type="Number"/>
+       
+       </VBox>
+      <Button id="Button3" text="Click" press="onArrayPress"/>
+        </HBox>
+        </f:content>
+       </f:Card>
+
+       
+        <f:Card class="sapUiSmallMarginTop" width="20rem" height="10rem" id="BinarySearch">
+        <f:header>
+        <card:Header id="cardHeader5" title="Binary Search"></card:Header>
+        </f:header>
+        <f:content>
+       <VBox width="100%"  justifyContent="SpaceBetween">
+       <Input id="input11" />
+        <Input id="input12" />
+         <Button id="Button4" icon="sap-icon://print" press="onBinaryPress"/>
+        </VBox>
+        </f:content>
+       </f:Card>
+       </HBox>
+        </content>
+    </Page>
+</mvc:View>
